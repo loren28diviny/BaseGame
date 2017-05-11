@@ -8,8 +8,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import tiled.core.Map;
-import tiled.io.TMXMapReader;
+
 
 public class Main extends Application {
 
@@ -29,9 +28,7 @@ public class Main extends Application {
         stage.setTitle("My JavaFX Application");
         stage.setScene(scene);
         stage.show();
-        TMXMapReader reader = new TMXMapReader();
-        Map map = reader.readMap("assets/map.tmx");
-        map.getTileSets().get(1).getFirstTile();
+
     }
 
 
