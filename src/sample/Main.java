@@ -15,12 +15,12 @@ public class Main extends Application {
     public void start(Stage stage) {
         Circle circ = new Circle(40, 40, 30);
         Group root = new Group(circ);
-        Scene scene = new Scene(root, 800, 800);
-        final Canvas canvas = new Canvas(400,300);
+        Scene scene = new Scene(root, 300, 300);
+        final Canvas canvas = new Canvas(1000,1000);
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
         gc.setFill(Color.BLUE);
-        gc.fillRect(250,75,100,100);
+        gc.fillRect(500,75,100,100);
 
         root.getChildren().add(canvas);
 
